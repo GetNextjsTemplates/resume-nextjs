@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@theme {
+  --color-primary: #FE4300;
+  --color-secondary: #868686;
+  --color-softGray: #F0F0F0;
+  --color-mistGray: #D7DCDD;
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-[80rem] mx-auto mt-0 mb-0 py-0 sm:px-7 px-5;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl xl:text-7xl 2xl:text-[85px] font-semibold leading-tight;
+  }
+
+  h2 {
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+  }
+
+  h4 {
+    @apply text-4xl;
+  }
+
+  h5 {
+    @apply text-2xl;
+  }
+
+  h6 {
+    @apply text-base lg:text-xl;
+  }
+
+  p {
+    @apply text-base text-secondary;
+  }
+}
