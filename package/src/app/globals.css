@@ -44,7 +44,7 @@ body {
   }
 
   h3 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold;
   }
 
   h4 {

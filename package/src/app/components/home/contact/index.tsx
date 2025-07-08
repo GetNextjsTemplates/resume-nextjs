@@ -68,14 +68,14 @@ const Contact = () => {
     return (
         <section>
             <div className="container">
-                <div className="py-16 md:py-32">
+                <div className="pt-16 md:pt-32 pb-20">
                     <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
                         <h2>Contact Me</h2>
                         <p className="text-xl text-orange-500">( 05 )</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <form onSubmit={handleSubmit}>
-                            <div className="flex flex-col gap-12">
+                            <div className="flex flex-col gap-7 sm:gap-12">
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
                                         <label htmlFor="name" className="label">Name *</label>
@@ -131,7 +131,7 @@ const Contact = () => {
                                         <p className="text-secondary">Great!!! Email has been Successfully Sent. We will get in touch asap.</p>
                                     </div>
                                 }
-                                <button type="submit" className="py-5 px-7 border border-primary w-fit rounded-full cursor-pointer">
+                                <button type="submit" className="w-fit py-2 sm:py-3 md:py-5 px-4 sm:px-5 md:px-7 border border-primary rounded-full">
                                     <span className="text-xl font-medium">Send Now</span>
                                 </button>
                             </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                                 {contactData?.socialLinks?.map((value: any, index: any) => {
                                     return (
                                         <div key={index}>
-                                            <Link href={value?.href} className="text-lg font-normal text-secondary hover:text-primary">{value?.title}</Link>
+                                            <Link href={value?.href} className="text-base sm:text-lg font-normal text-secondary hover:text-primary">{value?.title}</Link>
                                         </div>
                                     )
                                 })}
