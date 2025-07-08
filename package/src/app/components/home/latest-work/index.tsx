@@ -33,14 +33,33 @@ const LatestWork = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 sm:gap-y-12">
                             {workData?.map((value: any, index: any) => {
                                 return (
-                                    <div key={index} className="flex flex-col gap-4 sm:gap-6">
-                                        <Link href={value?.slug}>
+                                    <div key={index} className="group flex flex-col gap-4 sm:gap-6">
+                                        <div className="relative">
                                             <Image src={value?.image} alt="image" width={570} height={414} className="rounded-lg w-full h-full object-cover" />
-                                        </Link>
+                                            <Link
+                                                href={`${value.slug}`}
+                                                className="absolute top-0 left-0 backdrop-blur-xs bg-primary/15 w-full h-full hidden group-hover:flex rounded-lg"
+                                            >
+                                                <span className="flex justify-center items-center p-5 w-full">
+                                                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="0.333374" width="64" height="64" rx="32" fill="#FE4300" />
+                                                        <path
+                                                            d="M25.6667 25.3333H39M39 25.3333V38.6666M39 25.3333L25.6667 38.6666"
+                                                            stroke="#FFFF"
+                                                            strokeWidth="2"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                        />
+                                                    </svg>
+                                                </span>
+                                            </Link>
+                                        </div>
                                         <div className="flex flex-col gap-2">
                                             <div className="flex items-center justify-between">
-                                                <h5>{value?.title}</h5>
-                                                <Image src={"/images/icon/right-arrow-icon.svg"} alt="right-arrow-icon" width={30} height={30}/>
+                                                <Link href={`${value.slug}`}>
+                                                    <h5>{value?.title}</h5>
+                                                </Link>
+                                                <Image src={"/images/icon/right-arrow-icon.svg"} alt="right-arrow-icon" width={30} height={30} />
                                             </div>
                                             <p>Client: {value?.client}</p>
                                         </div>

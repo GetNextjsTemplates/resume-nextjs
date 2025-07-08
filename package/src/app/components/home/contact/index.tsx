@@ -131,9 +131,10 @@ const Contact = () => {
                                         <p className="text-secondary">Great!!! Email has been Successfully Sent. We will get in touch asap.</p>
                                     </div>
                                 }
-                                <button type="submit" className="w-fit py-2 sm:py-3 md:py-5 px-4 sm:px-5 md:px-7 border border-primary rounded-full">
-                                    <span className="text-xl font-medium">Send Now</span>
+                                <button type="submit" className="relative overflow-hidden cursor-pointer w-fit py-2 sm:py-3 md:py-5 px-4 sm:px-5 md:px-7 border border-primary rounded-full group">
+                                    <span className="relative z-10 text-xl font-medium text-primary group-hover:text-white transition-colors duration-300">Send Now</span>
                                 </button>
+
                             </div>
                         </form>
                         <div className="flex flex-col sm:flex-row md:flex-col justify-between gap-5 md:gap-20 items-center md:items-end">

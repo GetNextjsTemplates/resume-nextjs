@@ -41,7 +41,8 @@ const ContactBar = () => {
                                         height={24}
                                         className="min-w-[24px] min-h-[24px]"
                                     />
-                                    <h6>{value?.label}</h6>
+                                    
+                                    <h6 className="hover:text-primary">{value?.label}</h6>
                                 </Link>
                             ))}
                         </div>
@@ -55,6 +56,7 @@ const ContactBar = () => {
                                         alt={value?.platform}
                                         width={30}
                                         height={30}
+                                        className="hover:opacity-80"
                                     />
                                 </Link>
                             ))}
