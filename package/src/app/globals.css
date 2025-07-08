@@ -17,11 +17,20 @@ body {
   --color-secondary: #868686;
   --color-softGray: #F0F0F0;
   --color-mistGray: #D7DCDD;
+  --color-gray: #C0D8E0;
+
+  --breakpoint-xs: 425px;
 }
 
 @layer utilities {
   .container {
     @apply w-full max-w-[80rem] mx-auto mt-0 mb-0 py-0 sm:px-7 px-5;
+  }
+  .label {
+    @apply text-secondary text-sm font-normal;
+  }
+  .input {
+    @apply w-full border-b border-gray focus:border-primary focus:outline-none py-2;
   }
 }
 
@@ -31,7 +40,7 @@ body {
   }
 
   h2 {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
+    @apply text-3xl sm:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
   }
 
   h3 {
@@ -43,7 +52,7 @@ body {
   }
 
   h5 {
-    @apply text-2xl;
+    @apply text-xl md:text-2xl;
   }
 
   h6 {

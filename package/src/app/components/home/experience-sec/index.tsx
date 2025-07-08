@@ -34,11 +34,11 @@ const ExperienceSec = () => {
 
     return (
         <section>
-            <div className="py-28">
+            <div className="py-16 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-                        <h2 className="text-4xl font-bold">Experience</h2>
-                        <p className="text-xl text-orange-500">( 02 )</p>
+                        <h2>Experience</h2>
+                        <p className="text-xl text-primary">( 02 )</p>
                     </div>
 
                     <div className="space-y-12">
@@ -55,10 +55,10 @@ const ExperienceSec = () => {
                                     )}
 
                                     <div className="absolute left-0 top-0 transform -translate-x-1/2">
-                                        <div className={`w-3.5 h-3.5 rounded-full border-1 bg-white flex items-center justify-center ${index === 1 ? 'border-orange-500' : 'border-black'
+                                        <div className={`w-3.5 h-3.5 rounded-full border-1 bg-white flex items-center justify-center ${index === 1 ? 'border-primary' : 'border-black'
                                             }`}>
                                             {index === 1 && (
-                                                <div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div>
+                                                <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
                                             )}
                                         </div>
                                     </div>
