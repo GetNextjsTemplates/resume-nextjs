@@ -4,17 +4,8 @@ import { useState } from "react";
 import Logo from "../logo";
 
 const Header = () => {
-    const [isVisible, setIsVisible] = useState(false);
     const handleDownloadPDF = () => {
-        setIsVisible(false);
-
-        const style = document.createElement('style');
-
-        document.head.appendChild(style);
-
         window.print();
-
-        setIsVisible(true);
     };
     return (
         <header className="navbar top-0 left-0 z-999 w-full absolute">

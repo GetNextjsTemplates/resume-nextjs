@@ -21,7 +21,7 @@ const AboutMe = () => {
                             <p className="text-xl text-primary">( 01 )</p>
                         </div>
 
-                        <div className="pt-10 md:pt-16 flex gap-10 items-center justify-between">
+                        <div className="pt-10 xl:pt-16 flex gap-10 items-center justify-between">
                             <div className="w-[303px] h-[440px] hidden lg:flex">
                                 <Image
                                     src="/images/home/about-me/about-banner-img.svg"
@@ -42,7 +42,7 @@ const AboutMe = () => {
                                     embarrassing hidden in the middle of text.
                                 </p>
 
-                                <div className="grid grid-cols-3 py-10 md:py-16 gap-5 border-b border-mistGray">
+                                <div className="grid grid-cols-3 py-10 xl:py-16 gap-5 border-b border-mistGray">
                                     {[
                                         { count: "06", label: "Years of experience" },
                                         { count: "165+", label: "Happy Clients" },
@@ -55,7 +55,7 @@ const AboutMe = () => {
                                     ))}
                                 </div>
 
-                                <div className="pt-8 md:pt-14 flex flex-col sm:flex-row items-center gap-4">
+                                <div className="pt-8 xl:pt-14 flex flex-col sm:flex-row items-center gap-4">
                                     <div className="flex items-center gap-3.5">
                                         <Image
                                             src="/images/icon/lang-icon.svg"
@@ -63,13 +63,13 @@ const AboutMe = () => {
                                             width={30}
                                             height={30}
                                         />
-                                        <p className="text-xl text-black">Language</p>
+                                        <p className="text-base xl:text-xl text-black">Language</p>
                                     </div>
                                     <div className="flex flex-wrap justify-center items-center gap-2.5">
                                         {["English", "Hindi", "Malayalam"].map((lang) => (
                                             <p
                                                 key={lang}
-                                                className="bg-white py-2 md:py-3.5 px-4 md:px-5 w-fit rounded-full text-base sm:text-xl"
+                                                className="bg-white py-2 md:py-3.5 px-4 md:px-5 w-fit rounded-full text-base xl:text-xl"
                                             >
                                                 {lang}
                                             </p>

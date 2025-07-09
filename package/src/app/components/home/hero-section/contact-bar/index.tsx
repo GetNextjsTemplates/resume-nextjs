@@ -23,9 +23,9 @@ const ContactBar = () => {
 
     return (
         <section>
-            <div className="no-print border-t border-softGray">
+            <div className="border-t border-softGray">
                 <div className="container">
-                    <div className="flex flex-col md:flex-row flex-wrap items-center justify-between gap-4 py-6 md:py-7">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 md:py-7">
                         {/* Contact Items */}
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 md:gap-5 lg:gap-11">
                             {contactBarData?.contactItems?.map((value: any, index: number) => (
@@ -42,7 +42,7 @@ const ContactBar = () => {
                                         className="min-w-[24px] min-h-[24px]"
                                     />
                                     
-                                    <h6 className="hover:text-primary">{value?.label}</h6>
+                                    <h6 className="text-sm md:text-base xl:text-xl hover:text-primary">{value?.label}</h6>
                                 </Link>
                             ))}
                         </div>

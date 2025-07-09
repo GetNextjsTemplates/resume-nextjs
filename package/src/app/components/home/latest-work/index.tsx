@@ -25,15 +25,15 @@ const LatestWork = () => {
         <section>
             <div className="bg-softGray">
                 <div className="container">
-                    <div className="py-16 md:py-32 ">
+                    <div className="py-16 xl:py-32 ">
                         <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
                             <h2>Latest Works</h2>
                             <p className="text-xl text-orange-500">( 04 )</p>
                         </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 sm:gap-y-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 xl:gap-y-12">
                             {workData?.map((value: any, index: any) => {
                                 return (
-                                    <div key={index} className="group flex flex-col gap-3 sm:gap-6">
+                                    <div key={index} className="group flex flex-col gap-3 xl:gap-6">
                                         <div className="relative">
                                             <Image src={value?.image} alt="image" width={570} height={414} className="rounded-lg w-full h-full object-cover" />
                                             <Link
@@ -54,7 +54,7 @@ const LatestWork = () => {
                                                 </span>
                                             </Link>
                                         </div>
-                                        <div className="flex flex-col gap-0.5 sm:gap-2">
+                                        <div className="flex flex-col gap-0 xl:gap-2">
                                             <div className="flex items-center justify-between">
                                                 <Link href={`${value.slug}`}>
                                                     <h5>{value?.title}</h5>

@@ -75,15 +75,15 @@ button:hover::before {
 
 @layer base {
   h1 {
-    @apply text-5xl xl:text-7xl 2xl:text-[85px] font-semibold leading-tight;
+    @apply text-4xl md:text-5xl xl:text-7xl 2xl:text-[85px] font-semibold leading-tight;
   }
 
   h2 {
-    @apply text-3xl sm:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
+    @apply text-3xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
   }
 
   h3 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold;
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold;
   }
 
   h4 {
@@ -91,11 +91,11 @@ button:hover::before {
   }
 
   h5 {
-    @apply text-xl md:text-2xl;
+    @apply text-xl xl:text-2xl;
   }
 
   h6 {
-    @apply text-base lg:text-xl;
+    @apply text-sm md:text-base xl:text-xl;
   }
 
   p {
