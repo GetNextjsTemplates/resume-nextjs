@@ -49,7 +49,7 @@ const EducationSkills = () => {
                             <div className="grid grid-cols-2 xs:grid-cols-3 gap-5 xl:gap-7 w-full">
                                 {educationData?.skills?.map((value: any, index: any) => {
                                     return (
-                                        <div key={index} className="p-6 border border-softGray rounded-lg flex flex-col gap-10 items-center justify-between">
+                                        <div key={index} className="p-6 border border-softGray rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between">
                                             <div className="flex flex-col items-center gap-5">
                                                 <Image src={value?.icon} alt="icon" width={70} height={70} />
                                                 <p className="text-black font-normal">{value?.name}</p>

@@ -41,7 +41,7 @@ const ExperienceSec = () => {
                         <p className="text-xl text-primary">( 02 )</p>
                     </div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-7 md:space-y-12">
                         {experiences.map((exp, index) => (
                             <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 items-start relative">
                                 <div className="">

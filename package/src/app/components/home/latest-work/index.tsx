@@ -33,7 +33,7 @@ const LatestWork = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 sm:gap-y-12">
                             {workData?.map((value: any, index: any) => {
                                 return (
-                                    <div key={index} className="group flex flex-col gap-4 sm:gap-6">
+                                    <div key={index} className="group flex flex-col gap-3 sm:gap-6">
                                         <div className="relative">
                                             <Image src={value?.image} alt="image" width={570} height={414} className="rounded-lg w-full h-full object-cover" />
                                             <Link
@@ -54,7 +54,7 @@ const LatestWork = () => {
                                                 </span>
                                             </Link>
                                         </div>
-                                        <div className="flex flex-col gap-2">
+                                        <div className="flex flex-col gap-0.5 sm:gap-2">
                                             <div className="flex items-center justify-between">
                                                 <Link href={`${value.slug}`}>
                                                     <h5>{value?.title}</h5>

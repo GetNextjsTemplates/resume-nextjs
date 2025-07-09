@@ -102,3 +102,39 @@ button:hover::before {
     @apply text-base text-secondary;
   }
 }
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header, footer, .navbar, .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  * {
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  html, body {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-section{
+    padding-top: 35px;
+  }
+
+  .break-page {
+    break-before: page;
+    page-break-before: always;
+  }
+}
