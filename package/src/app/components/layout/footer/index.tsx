@@ -12,7 +12,7 @@ const Footer = () => {
                         </div>
                         <div className="flex-grow h-px bg-black" />
                     </div>
-                    <p className="text-secondary">Designed by Wrappixel</p>
+                    <p className="text-secondary">Designed by <Link href={"https://getnextjstemplates.com/"}>getnextjstemplates.</Link></p>
                 </div>
             </div>
         </footer>
