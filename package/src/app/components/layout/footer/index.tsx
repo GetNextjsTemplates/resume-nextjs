@@ -1,4 +1,5 @@
 import Logo from "../logo";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                         </div>
                         <div className="flex-grow h-px bg-black" />
                     </div>
-                    <p className="text-secondary">Designed by <Link href={"https://getnextjstemplates.com/"}>getnextjstemplates.</Link></p>
+                    <p className="text-secondary">Designed by <Link href={"https://getnextjstemplates.com/"} className="hover:text-black">getnextjstemplates.</Link></p>
                 </div>
             </div>
         </footer>
