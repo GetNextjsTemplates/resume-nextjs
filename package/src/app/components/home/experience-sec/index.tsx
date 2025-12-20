@@ -51,7 +51,7 @@ const ExperienceSec = () => {
 
                                 <div className=" relative">
                                     {index < experiences.length && (
-                                        <div className={`absolute left-0 top-3 w-px ${index < experiences.length - 1 ? 'h-40' : 'h-30'} bg-softGray`}></div>
+                                        <div className={`absolute left-0 top-3 w-px ${index < experiences.length - 1 ? 'h-40' : 'h-30'} bg-muted`}></div>
                                     )}
 
                                     <div className="no-print absolute left-0 top-0 transform -translate-x-1/2">

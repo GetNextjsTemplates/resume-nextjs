@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 const AboutMe = () => {
     return (
         <section>
-            <div className="relative bg-softGray py-10 md:py-32">
+            <div className="relative bg-muted py-10 md:py-32">
                 <div className="absolute top-0 w-full px-9">
                     <Image
                         src="/images/home/about-me/resume-bg-img.svg"
@@ -42,7 +43,7 @@ const AboutMe = () => {
                                     embarrassing hidden in the middle of text.
                                 </p>
 
-                                <div className="grid grid-cols-3 py-10 xl:py-16 gap-5 border-b border-mistGray">
+                                <div className="grid grid-cols-3 py-10 xl:py-16 gap-5 border-b border-gray-300">
                                     {[
                                         { count: "06", label: "Years of experience" },
                                         { count: "165+", label: "Happy Clients" },
@@ -66,13 +67,12 @@ const AboutMe = () => {
                                         <p className="text-base xl:text-xl text-black">Language</p>
                                     </div>
                                     <div className="flex flex-wrap justify-center items-center gap-2.5">
-                                        {["English", "Hindi", "Malayalam"].map((lang) => (
-                                            <p
-                                                key={lang}
-                                                className="bg-white py-2 md:py-3.5 px-4 md:px-5 w-fit rounded-full text-base xl:text-xl"
-                                            >
-                                                {lang}
-                                            </p>
+                                        {["English", "Hindi", "Malayalam"].map((lang, index) => (
+                                            <Badge key={index} asChild>
+                                                <p className="bg-white py-2 md:py-3.5 px-4 md:px-5 text-base xl:text-xl text-secondary">
+                                                    {lang}
+                                                </p>
+                                            </Badge>
                                         ))}
                                     </div>
                                 </div>

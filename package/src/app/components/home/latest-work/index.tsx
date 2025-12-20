@@ -23,7 +23,7 @@ const LatestWork = () => {
 
     return (
         <section>
-            <div className="bg-softGray">
+            <div className="bg-muted">
                 <div className="container">
                     <div className="py-16 xl:py-32 ">
                         <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">

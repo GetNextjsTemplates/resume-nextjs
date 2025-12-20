@@ -22,7 +22,7 @@ const EducationSkills = () => {
 
     return (
         <section>
-            <div className="border-t border-softGray overflow-hidden">
+            <div className="border-t border-muted overflow-hidden">
                 <div className="container relative z-10">
                     <Image src={"/images/home/education-skill/edu-skill-vector.svg"} alt="vector" width={260} height={170} className="no-print absolute top-0 left-0 transform -translate-y-1/2" />
                     <div className="relative z-10 py-16 md:py-32">
@@ -49,7 +49,7 @@ const EducationSkills = () => {
                             <div className="grid grid-cols-2 xs:grid-cols-3 gap-5 xl:gap-7 w-full">
                                 {educationData?.skills?.map((value: any, index: any) => {
                                     return (
-                                        <div key={index} className="p-4 xl:p-6 border border-softGray rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between">
+                                        <div key={index} className="p-4 xl:p-6 border border-muted rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between">
                                             <div className="flex flex-col items-center gap-5">
                                                 <Image src={value?.icon} alt="icon" width={70} height={70} />
                                                 <p className="text-black font-normal">{value?.name}</p>
