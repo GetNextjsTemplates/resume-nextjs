@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -79,11 +80,11 @@ button:hover::before {
   }
 
   .label {
-    @apply text-secondary text-sm font-normal;
+    @apply text-muted-foreground text-sm font-normal;
   }
 
   .input {
-    @apply w-full border-b border-border focus:border-primary focus:outline-none py-2;
+    @apply w-full border-0 border-b border-border rounded-none focus-visible:ring-0 focus-visible:border-primary! focus-visible:outline-none py-2;
   }
 }
 
@@ -113,7 +114,7 @@ button:hover::before {
   }
 
   p {
-    @apply text-base text-secondary;
+    @apply text-base text-muted-foreground;
   }
 }
 
